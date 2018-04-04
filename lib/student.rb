@@ -3,9 +3,9 @@ require_relative "../config/environment.rb"
 class Student
 
   def initialize(id = nil, name, grade)
-    @id = id 
+    @id = id
     @name = name
-    @grade = grade 
+    @grade = grade
   end
 
   # Remember, you can access your database connection anywhere in this class
