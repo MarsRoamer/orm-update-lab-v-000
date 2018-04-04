@@ -4,8 +4,6 @@ require 'pry'
 class Student
   attr_accessor :name, :grade, :id
 
-
-
   def initialize(id = nil, name, grade)
     @id = id
     @name = name
@@ -53,7 +51,7 @@ class Student
     end
 
     def self.new_from_db(arr)
-
+      Student.new(arr[0], arr[1], arr[2])
     end
 
 
