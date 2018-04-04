@@ -14,12 +14,9 @@ class Student
 
   def self.create(name, grade)
     obj = self.new(name, grade)
-
     obj.name = name
     obj.grade = grade
     obj.save
-
-
   end
 
   def self.create_table
@@ -53,6 +50,10 @@ class Student
         DB[:conn].execute(sql, self.name, self.grade)
         self.id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
       end
+    end
+
+    def self.new_from_db(arr)
+
     end
 
 
