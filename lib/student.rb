@@ -17,6 +17,7 @@ class Student
 
     obj.name = name
     obj.grade = grade
+    save
     obj
 
   end
