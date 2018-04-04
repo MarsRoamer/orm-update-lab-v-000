@@ -54,6 +54,12 @@ class Student
       Student.new(arr[0], arr[1], arr[2])
     end
 
+    def self.find_by_name(name)
+      sql = "SELECT * FROM students WHERE name = name"
+      obj = DB[:conn].execute(sql)
+      binding.pry
+    end
+
 
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]
