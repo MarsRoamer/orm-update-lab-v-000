@@ -13,10 +13,10 @@ class Student
   end
 
   def self.create(name, grade)
-    self.new(name, grade)
+    obj = self.new(name, grade)
     binding.pry
-    self.name = name
-    self.grade = grade
+    obj.name = name
+    obj.grade = grade
   end
 
   def self.create_table
