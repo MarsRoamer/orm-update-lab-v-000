@@ -14,7 +14,7 @@ class Student
 
   def self.create(name, grade)
     obj = self.new(name, grade)
-    binding.pry
+
     obj.name = name
     obj.grade = grade
   end
