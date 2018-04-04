@@ -17,6 +17,7 @@ class Student
 
     obj.name = name
     obj.grade = grade
+    binding.pry
   end
 
   def self.create_table
