@@ -26,12 +26,12 @@ class Student
       DB[:conn].execute("DROP TABLE students")
     end
 
-    def save(student)
+    def save
       sql = <<-SQL
         INSERT INTO students (name, grade)
         VALUES ?, ?
         SQL
-      DB[:conn].execute(sql, student.name, student.grade)
+      DB[:conn].execute(sql, self.name, self.grade)
       binding.pry
     end
 
