@@ -17,7 +17,7 @@ class Student
 
     obj.name = name
     obj.grade = grade
-    self.save
+    obj.save
     obj
 
   end
